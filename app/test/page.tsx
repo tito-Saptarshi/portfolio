@@ -1,10 +1,21 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Github, Facebook, Twitter, Linkedin, Mail, ArrowRight, Code, Palette, Zap, ChevronRight } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Github,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Mail,
+  ArrowRight,
+  Code,
+  Palette,
+  Zap,
+  ChevronRight,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function page() {
+export default function Page() {
   const projects = [
     {
       id: 1,
@@ -29,13 +40,14 @@ export default function page() {
     {
       id: 3,
       title: "Weather Dashboard",
-      description: "A responsive weather dashboard with location-based forecasts and interactive charts.",
+      description:
+        "A responsive weather dashboard with location-based forecasts and interactive charts.",
       image: "/placeholder.svg?height=300&width=400",
       skills: ["Vue.js", "Chart.js", "API Integration", "CSS3"],
       type: "For Display",
       link: "#",
     },
-  ]
+  ];
 
   const socialLinks = [
     { name: "GitHub", icon: Github, url: "https://github.com" },
@@ -43,16 +55,28 @@ export default function page() {
     { name: "Twitter", icon: Twitter, url: "https://twitter.com" },
     { name: "Facebook", icon: Facebook, url: "https://facebook.com" },
     { name: "Email", icon: Mail, url: "mailto:your.email@example.com" },
-  ]
+  ];
 
   const skills = [
-    { name: "Frontend Development", icon: Code, description: "React, Next.js, Vue.js" },
-    { name: "UI/UX Design", icon: Palette, description: "Figma, Adobe XD, Sketch" },
-    { name: "Performance", icon: Zap, description: "Optimization, SEO, Analytics" },
-  ]
+    {
+      name: "Frontend Development",
+      icon: Code,
+      description: "React, Next.js, Vue.js",
+    },
+    {
+      name: "UI/UX Design",
+      icon: Palette,
+      description: "Figma, Adobe XD, Sketch",
+    },
+    {
+      name: "Performance",
+      icon: Zap,
+      description: "Optimization, SEO, Analytics",
+    },
+  ];
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa] dark:bg-[#121212] relative overflow-hidden">
+    <div className="min-h-screen bg-[#f8f9fa] dark:bg-[#121212] relative overflow-hidden p-2 m-2">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#f0f0f0] dark:bg-[#1a1a1a] rounded-full -translate-y-1/2 translate-x-1/2"></div>
@@ -70,7 +94,9 @@ export default function page() {
             <div className="w-10 h-10 bg-black dark:bg-white text-white dark:text-black rounded-lg flex items-center justify-center font-bold text-xl">
               JD
             </div>
-            <span className="hidden font-bold text-xl sm:inline-block">Portfolio</span>
+            <span className="hidden font-bold text-xl sm:inline-block">
+              Portfolio
+            </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-10 text-sm font-medium">
             <Link
@@ -113,7 +139,7 @@ export default function page() {
         </div>
       </header>
 
-      <main className="relative z-10">
+      <main className="relative z-10 p-2">
         {/* Hero Section */}
         <section id="home" className="container py-20 md:py-32">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -139,9 +165,10 @@ export default function page() {
 
               <div className="max-w-[600px] text-black/60 dark:text-white/60 text-lg leading-relaxed">
                 <p className="mb-4">
-                  I&lsquo;m a passionate full-stack developer with over 5 years of experience creating digital solutions that
-                  make a difference. I specialize in modern web technologies and love turning complex problems into
-                  simple, beautiful designs.
+                  I&lsquo;m a passionate full-stack developer with over 5 years
+                  of experience creating digital solutions that make a
+                  difference. I specialize in modern web technologies and love
+                  turning complex problems into simple, beautiful designs.
                 </p>
               </div>
 
@@ -210,8 +237,12 @@ export default function page() {
                   <div className="w-12 h-12 bg-black dark:bg-white text-white dark:text-black rounded-lg flex items-center justify-center mb-6">
                     <skill.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-black dark:text-white">{skill.name}</h3>
-                  <p className="text-black/60 dark:text-white/60">{skill.description}</p>
+                  <h3 className="text-xl font-bold mb-2 text-black dark:text-white">
+                    {skill.name}
+                  </h3>
+                  <p className="text-black/60 dark:text-white/60">
+                    {skill.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -224,9 +255,12 @@ export default function page() {
             <div className="inline-flex items-center px-3 py-1 rounded-full border border-black/10 dark:border-white/10 bg-white dark:bg-black text-sm self-start">
               Featured Work
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white">Recent Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white">
+              Recent Projects
+            </h2>
             <p className="max-w-[600px] text-black/60 dark:text-white/60 text-lg">
-              Here are some of my latest projects that showcase my skills and expertise in web development.
+              Here are some of my latest projects that showcase my skills and
+              expertise in web development.
             </p>
           </div>
 
@@ -268,8 +302,12 @@ export default function page() {
                   </Badge>
                 </div>
                 <div className="flex-1 space-y-6">
-                  <h3 className="text-3xl font-bold text-black dark:text-white">{project.title}</h3>
-                  <p className="text-black/60 dark:text-white/60 text-lg">{project.description}</p>
+                  <h3 className="text-3xl font-bold text-black dark:text-white">
+                    {project.title}
+                  </h3>
+                  <p className="text-black/60 dark:text-white/60 text-lg">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {project.skills.map((skill) => (
                       <Badge
@@ -310,10 +348,13 @@ export default function page() {
           <div className="absolute inset-0 bg-black/5 dark:bg-white/5 -skew-y-3"></div>
           <div className="container relative">
             <div className="max-w-4xl mx-auto bg-white dark:bg-black border-2 border-black/20 dark:border-white/20 rounded-3xl p-12 md:p-16 text-center">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-white">Let&apos;s Work Together</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-white">
+                Let&apos;s Work Together
+              </h2>
               <p className="text-black/60 dark:text-white/60 text-lg mb-10 max-w-2xl mx-auto">
-                I&apos;m always interested in new opportunities and exciting projects. Let&apos;s discuss how we can bring your
-                ideas to life.
+                I&apos;m always interested in new opportunities and exciting
+                projects. Let&apos;s discuss how we can bring your ideas to
+                life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -365,5 +406,5 @@ export default function page() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

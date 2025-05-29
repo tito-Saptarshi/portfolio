@@ -1,14 +1,16 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
+import { LogInIcon } from "lucide-react";
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className="mx-auto px-2">
    
       <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/70 dark:bg-black/70 border-b border-black/5 dark:border-white/5">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between px-2">
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-black dark:bg-white text-white dark:text-black rounded-lg flex items-center justify-center font-bold text-xl">
+            <div className="w-10 h-10 bg-black dark:bg-white text-white dark:text-black rounded-lg flex items-center justify-center font-bold text-xl ">
               JD
             </div>
             <span className="hidden font-bold text-xl sm:inline-block">
@@ -46,11 +48,19 @@ export const Navbar = () => {
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
-            <Button
+            <ModeToggle />
+           
+             <Button
               variant="outline"
               className="border-2 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
             >
               Contact Me
+            </Button>
+             <Button
+              variant="default"
+              className="border-2 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
+            >
+              <span className="hidden md:block">Sign In</span> <span><LogInIcon /></span>
             </Button>
           </div>
         </div>
