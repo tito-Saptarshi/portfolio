@@ -26,7 +26,7 @@ export const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-black dark:bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
             </Link>
             <Link
-              href="#projects"
+              href="/all-projects"
               className="relative transition-colors hover:text-black/80 dark:hover:text-white/80 text-black/60 dark:text-white/60 group"
             >
               Projects
