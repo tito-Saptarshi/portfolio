@@ -5,7 +5,7 @@ import { LogInIcon } from "lucide-react";
 
 export const Navbar = () => {
   return (
-    <div className="mx-auto px-2">
+    <div className="mx-auto mx-2 pb-2">
    
       <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/70 dark:bg-black/70 border-b border-black/5 dark:border-white/5">
         <div className="container flex h-16 items-center justify-between px-2">

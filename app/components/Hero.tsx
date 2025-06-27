@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
    <div className="container mx-auto px-2">
           <main className="relative z-10 px-2">
-                      <SidebarTrigger className="-ml-5 md:p-5" size="icon"/>
+                      {/* <SidebarTrigger className="-ml-5 md:p-5" size="icon"/> */}
                 {/* Hero Section */}
                 <section id="home" className="container py-5 md:py-10">
                   <div className="flex flex-col lg:flex-row gap-16 items-center">
