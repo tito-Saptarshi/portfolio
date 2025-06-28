@@ -1,5 +1,6 @@
+import { ProjectShowcase } from "@/app/components/ProjectShowcase"
 
-import { ProjectShowcase } from '../components/ProjectShowcase'
+
 
 const page = () => {
   return (

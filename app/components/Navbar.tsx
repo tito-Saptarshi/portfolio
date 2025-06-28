@@ -77,6 +77,9 @@ export const Navbar = () => {
                 </Button>
               </SignInButton>
             </SignedOut>
+             <SignedIn>
+              <UserButton />
+            </SignedIn>
           </div>
         </div>
       </header>

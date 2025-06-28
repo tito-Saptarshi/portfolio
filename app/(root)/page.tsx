@@ -1,22 +1,7 @@
-import { AppSidebar } from "@/components/app-sidebar";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
 
-import DecorativeElementsHero from "./components/DecorativeElementsHero";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
+import DecorativeElementsHero from "../components/DecorativeElementsHero";
+import { Hero } from "../components/Hero";
+
 
 // export default function Home() {
 //   return (
