@@ -1,0 +1,3 @@
+npm run typegen
+npx sanity@latest typegen generate
+npx sanity@latest schema extract --path=./sanity/extract.json
